@@ -1,3 +1,0 @@
-admin,12345
-toddhoward,skyrim
-tommywiseau,ohhimark
