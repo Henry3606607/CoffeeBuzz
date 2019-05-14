@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/simpleCart/simpleCart.js"></script>
+  <script src="js/simplecartjs-config.js"></script>
   <title>Business Casual - COFFEEBUZZ Theme</title>
 
   <!-- Bootstrap core CSS -->
@@ -55,6 +57,9 @@
           <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="login.html">Staff Login</a>
             </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="cart.html">Cart (<span class="simpleCart_quantity"></span>)</a>
+            </li>
         </ul>
       </div>
     </div>
@@ -81,6 +86,8 @@ Cappuccino, long black, hot chocolate and tee (Earl Grey, Assam, Green, and Mint
 The shop also provides a range of cakes and sandwiches, the range of them changes periodically. If some of the cakes or sandwiches are sold out, the customer should be able to see this.
  -->
   <section class="section">
+      <div class="product">
+          <div class="simpleCart_shelfItem">
     <div class="row">
         <div class='col-lg-4'>
             <div class="card container container-left">
@@ -88,12 +95,21 @@ The shop also provides a range of cakes and sandwiches, the range of them change
                 <div class="card-body">
                   <h5 class="card-title">Espresso</h5>
                   <p class="card-text"></p>
-                  <div class="dropdown p-2">
-                      Small <input type="radio" name="small" value="Small" />
-                      Medium <input type="radio" name="medium" value="Medium" />
-                      Large <input type="radio" name="large" value="Large" />
+                  <span>
+                  <div class="btn btn-primary">
+                    <a href="Esmall.html" style="color:white">Small</a>
                   </div>
-                  <input type="submit" class="btn btn-primary"/>
+                </span>
+                <span>
+                  <div class="btn btn-primary">
+                    <a href="Emedium.html" style="color:white">Medium</a>
+                  </div>
+                </span>
+                <span>
+                  <div class="btn btn-primary">
+                    <a href="ELarge.html" style="color:white">Large</a>
+                  </div>
+                </span>
               </div>
             </div>
         </div>
@@ -103,12 +119,21 @@ The shop also provides a range of cakes and sandwiches, the range of them change
                 <div class="card-body">
                   <h5 class="card-title">Double Espresso</h5>
                   <p class="card-text"></p>
-                  <div class="dropdown p-2">
-                      Small <input type="radio" name="small" value="Small" />
-                      Medium <input type="radio" name="medium" value="Medium" />
-                      Large <input type="radio" name="large" value="Large" />
+                  <span>
+                  <div class="btn btn-primary">
+                    <a href="DEsmall.html" style="color:white">Small</a>
                   </div>
-                  <input type="submit" class="btn btn-primary"/>
+                </span>
+                <span>
+                  <div class="btn btn-primary">
+                    <a href="DEmedium.html" style="color:white">Medium</a>
+                  </div>
+                </span>
+                <span>
+                  <div class="btn btn-primary">
+                    <a href="DELarge.html" style="color:white">Large</a>
+                  </div>
+                </span>
               </div>
             </div>
         </div>
@@ -118,11 +143,12 @@ The shop also provides a range of cakes and sandwiches, the range of them change
                 <div class="card-body">
                   <h5 class="card-title">Latte</h5>
                   <p class="card-text"></p>
-                  <div class="dropdown p-2">
-                      Large <input type="radio" name="large" value="Large" />
-                  </div>
-                  <input type="submit" class="btn btn-primary"/>
-              </div>
+                  <span>
+                      <div class="btn btn-primary">
+                        <a href="LLarge.html" style="color:white">Large</a>
+                      </div>
+                    </span>
+              </div>  
             </div>
         </div>
         <div class='col-lg-4'>
@@ -131,11 +157,16 @@ The shop also provides a range of cakes and sandwiches, the range of them change
                 <div class="card-body">
                   <h5 class="card-title">Cappuccino</h5>
                   <p class="card-text"></p>
-                  <div class="dropdown p-2">
-                      Medium <input type="radio" name="medium" value="Medium" />
-                      Large <input type="radio" name="large" value="Large" />
-                  </div>
-                  <input type="submit" class="btn btn-primary"/>
+                  <span>
+                      <div class="btn btn-primary">
+                        <a href="Cmedium.html" style="color:white">Medium</a>
+                      </div>
+                    </span>
+                  <span>
+                      <div class="btn btn-primary">
+                        <a href="Clarge.html" style="color:white">Large</a>
+                      </div>
+                    </span>
               </div>
             </div>
         </div>
@@ -145,11 +176,16 @@ The shop also provides a range of cakes and sandwiches, the range of them change
                 <div class="card-body">
                   <h5 class="card-title">Long Black</h5>
                   <p class="card-text"></p>
-                  <div class="dropdown p-2">
-                      Medium <input type="radio" name="medium" value="Medium" />
-                      Large <input type="radio" name="large" value="Large" />
-                  </div>
-                  <input type="submit" class="btn btn-primary"/>
+                  <span>
+                      <div class="btn btn-primary">
+                        <a href="LBmedium.html" style="color:white">Medium</a>
+                      </div>
+                    </span>
+                    <span>
+                        <div class="btn btn-primary">
+                          <a href="LBlarge.html" style="color:white">Large</a>
+                        </div>
+                      </span>
               </div>
             </div>
         </div>
@@ -159,11 +195,16 @@ The shop also provides a range of cakes and sandwiches, the range of them change
                 <div class="card-body">
                   <h5 class="card-title">Hot Chocolate</h5>
                   <p class="card-text"></p>
-                  <div class="dropdown p-2">
-                      Medium <input type="radio" name="medium" value="Medium" />
-                      Large <input type="radio" name="large" value="Large" />
-                  </div>
-                  <input type="submit" class="btn btn-primary"/>
+                  <span>
+                      <div class="btn btn-primary">
+                        <a href="HCmedium.html" style="color:white">Medium</a>
+                      </div>
+                    </span>
+                    <span>
+                        <div class="btn btn-primary">
+                          <a href="HClarge.html" style="color:white">Large</a>
+                        </div>
+                      </span>
               </div>
             </div>
         </div>
@@ -173,17 +214,32 @@ The shop also provides a range of cakes and sandwiches, the range of them change
                 <div class="card-body">
                   <h5 class="card-title">Tea</h5>
                   <p class="card-text"></p>
-                  <div class="dropdown p-2">
-                      Early Grey <input type="radio" name="medium" value="Medium" />
-                      Assam <input type="radio" name="large" value="Large" />
-                      Green <input type="radio" name="large" value="Large" />
-                      Mint <input type="radio" name="large" value="Large" />
-                  </div>
-                  <input type="submit" class="btn btn-primary"/>
+                  <span>
+                      <div class="btn btn-primary">
+                        <a href="EGtea.html" style="color:white">Earl Grey</a>
+                      </div>
+                    </span>
+                    <span>
+                        <div class="btn btn-primary">
+                          <a href="Atea.html" style="color:white">Assam</a>
+                        </div>
+                      </span>
+                      <span>
+                          <div class="btn btn-primary">
+                            <a href="Gtea.html" style="color:white">Green</a>
+                          </div>
+                        </span>
+                        <span>
+                            <div class="btn btn-primary">
+                              <a href="Mtea.html" style="color:white">Mint</a>
+                            </div>
+                          </span>
               </div>
             </div>
         </div>
     </div>
+          </div>
+      </div>
   </section>
 
   <section class="section">
@@ -205,18 +261,23 @@ The shop also provides a range of cakes and sandwiches, the range of them change
     <div class="row">
         <div class='col-lg-4'>
             <div class="card container container-left">
+                <div class="simpleCart_shelfItem">
                 <img class="card-img-top" src="./img/t.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Sandwhich 1</h5>
+                  <h5 class="card-title">
+                    <div class="item_name">Sandwhich 1</div>
+                  </h5>
                   <p class="card-text"></p>
-                  <div class="dropdown p-2">
-                      Early Grey <input type="radio" name="medium" value="Medium" />
-                      Assam <input type="radio" name="large" value="Large" />
-                      Green <input type="radio" name="large" value="Large" />
-                      Mint <input type="radio" name="large" value="Large" />
+                  <h5 class="item_price">$4.00</h5>
+                  <p>Enter a quantity:</p>
+                  <input type="text" value="1" class="item_Quantity" />
+                  <br>
+                  <br>
+                  <div class="btn btn-primary">
+                      <a class="item_add" href="javascript:;" style="color:white">Add to Cart</a>
                   </div>
-                  <input type="submit" class="btn btn-primary"/>
               </div>
+                </div>
             </div>
         </div>
         <div class='col-lg-4'>
