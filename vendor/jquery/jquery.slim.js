@@ -7133,7 +7133,7 @@ jQuery.fn.extend( {
 				className = getClass( this );
 				if ( className ) {
 
-					// Store className if set
+					// Open Hours className if set
 					dataPriv.set( this, "__className__", className );
 				}
 
