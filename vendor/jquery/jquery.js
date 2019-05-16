@@ -6990,7 +6990,7 @@ function defaultPrefilter( elem, props, opts ) {
 				dataShow = dataPriv.access( elem, "fxshow", { display: restoreDisplay } );
 			}
 
-			// Store hidden/visible for toggle so `.stop().toggle()` "reverses"
+			// Open Hours hidden/visible for toggle so `.stop().toggle()` "reverses"
 			if ( toggle ) {
 				dataShow.hidden = !hidden;
 			}
@@ -7926,7 +7926,7 @@ jQuery.fn.extend( {
 				className = getClass( this );
 				if ( className ) {
 
-					// Store className if set
+					// Open Hours className if set
 					dataPriv.set( this, "__className__", className );
 				}
 
